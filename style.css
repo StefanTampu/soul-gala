@@ -47,19 +47,27 @@ table {
 	border-spacing: 0;
 }
 
-/**Careers Page**/
+/*Careers Page*/
 
 #careers-page {
+	height: 100vh;
 	background-color: black;
 	color: white;
+	padding: 0 34px;
 }
 
 #careers-page main {
-	padding: 64px;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 64px 30px;
+	border-left: 4px solid white;
 }
 
 h1 {
 	font-size: 80px;
+}
+
+#careers-page h1 {
 	margin-bottom: 24px;
 }
 
@@ -101,4 +109,126 @@ h3 {
 
 .lm {
 	font-variant: small-caps;
+}
+
+/*Career Info Page*/
+
+.career-info-page {
+	width: 100vw;
+}
+
+.career-info-page main {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.career-info-left {
+	box-sizing: border-box;
+	height: 100vh;
+	width: 33%;
+	background-color: black;
+	color: white;
+	display: grid;
+	justify-content: center;
+	grid-template-rows: 1fr 1fr 50% 1fr;
+	gap: 32px;
+	position: fixed;
+	box-shadow: 4px 0 8px hsl(0, 14%, 8%);
+}
+
+.left-title {
+	text-align: left;
+	grid-row-start: 2;
+}
+
+.career-details-container {
+	min-height: fit-content;
+	height: 200px;
+	grid-row-start: 3;
+	border-radius: 32px;
+	background-color: white;
+	color: black;
+	padding: 32px 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 0 16px 8px hsl(0, 14%, 89%) inset;
+}
+
+.career-details-container h2 {
+	text-decoration: underline double 2px;
+}
+
+.career-details-container li {
+	line-height: 170%;
+}
+
+button {
+	height: 40px;
+	width: 240px;
+	padding: 8px;
+	font-size: 24px;
+	border-radius: 16px;
+	text-transform:uppercase;
+	background-color: black;
+	color: white;
+}
+
+button:hover {
+	background-color: hsl(280, 73%, 56%);
+	color: white;
+	cursor: pointer;
+}
+
+.career-info-right {
+	background-color: hsl(0, 14%, 95%);
+	box-sizing: border-box;
+	height: 100vh;
+	width: 67%;
+	margin-left: 33%;
+	padding: 0 32px;
+}
+
+#right-text {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+	height: 100%;
+	padding: 0 32px;
+	position: relative;
+}
+
+#right-text:before, #right-text:after {
+	content: " ";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 8px;
+  }
+
+#right-text:before {
+	box-shadow: -8px 0 8px -8px hsl(0, 14%, 8%) inset;
+	left: -8px;
+}
+
+#right-text:after {
+	box-shadow: 8px 0 8px -8px hsl(0, 14%, 8%) inset;
+	right: -8px;
+}
+
+.right-section {
+	text-align: justify;
+}
+
+.career-info-right h3 {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.career-info-right p {
+	font-size: 20px;
 }

@@ -252,3 +252,181 @@ button:active {
 .career-info-right p {
 	font-size: 20px;
 }
+
+/*Career Application Form Page*/
+
+.career-apply-page {
+	height: 100vh;
+	background: linear-gradient(hsla(0, 0%, 100%, 40%), hsla(0, 0%, 73%, 60%), hsla(0, 0%, 0%, 80%)), linear-gradient(270deg,black, white);
+}
+
+.career-apply-page main {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-container {
+	height: 480px;
+	width: 800px;
+	border-radius: 64px;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	background: linear-gradient(90deg, hsla(0,0%,100%,100%) 20%, hsla(0,0%,0%,44%));
+}
+
+#career-application-form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+
+#career-application-form h1 {
+	font-size: 56px;
+	font-style: italic;
+	color: hsl(0, 14%, 18%);
+	font-weight: bold;
+}
+
+label {
+	font-variant: small-caps;
+	color: hsl(0, 14%, 18%);
+}
+
+#fs1 {
+	min-width: 250px;
+	height: 32px;
+}
+
+.select-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.select-box {
+	border: none;
+	appearance: none;
+	padding: 0 32px 0 16px;
+	width: 100%;
+	height: 100%;
+	background-color: hsl(0, 14%, 96%);
+	color: hsl(0, 14%, 30%);
+	font-size: 18px;
+	font-weight: 600;
+	font-variant: small-caps;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.select-arrow {
+	height: 100%;
+	width: 24px;
+	position: absolute;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(0, 14%, 18%);
+	color: white;
+	border-radius: 0 8px 8px 0;
+	font-size: 18px;
+	pointer-events: none;
+}
+
+
+#fs2{
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	gap: 8px 32px;
+	justify-items: center;
+	align-items: center;
+}
+
+#fs2 input {
+	border: none;
+	box-sizing: border-box;
+	width: 100%;
+	height: 32px;
+	padding: 0 0 0 16px;
+	background-color: hsl(0, 14%, 96%);
+	color: hsl(0, 14%, 30%);
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#fs2 input:focus {
+	border: none;
+	outline: none;
+	background-color: hsl(0, 14%, 89%);
+}
+
+#fs2 input::placeholder {
+	color: hsl(0, 14%, 69%);
+}
+
+#fs3{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	justify-items: center;
+	align-items: center;
+}	
+
+.upload-area {
+	position: relative;
+}
+
+input[type=file] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.file-upload {
+	box-sizing: border-box;
+	height: 48px;
+	width: 224px;
+	padding: 16px;
+	background: linear-gradient(110deg, hsl(0, 14%, 89%), 10%, hsl(0, 14%, 8%));
+	border-radius: 8px;
+	text-align: center;
+}
+
+.default {
+	font-variant: small-caps;
+	color: white;
+	font-size: 18px;
+}
+
+.upload-success {
+	display: none;
+}
+
+input[type=file]:valid + .file-upload {
+
+	background: linear-gradient(110deg, hsl(280, 73%, 86%), 10%, hsl(280, 73%, 56%));
+	
+	.upload-success {
+		display: inline-block;
+		font-variant: small-caps;
+		color: white;
+		font-size: 18px;
+	}
+
+	.default {
+		display: none;
+	}
+}

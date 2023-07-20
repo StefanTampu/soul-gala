@@ -4,44 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply - Soul Gala</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body class="career-apply-page">
     <main>
         <div class="form-container">
             <div id="left-image"></div>
+            <form method="post" enctype="multipart/form-data" id="career-application-form">
+                <h1>Apply Now</h1>
+                    <div id="fs1">
+                        <label for="position">Position Applied For*</label><br>
+                        <div class="select-container">
+                            <select name="Position" class="select-box" id="position" required>
+                                <option value="j1">Job one</option>
+                                <option value="j2">Job two</option>
+                                <option value="j3">Job three</option>
+                                <option value="j4">Job four</option>
+                                <option value="j5">Job five</option>
+                                <option value="j6">Job six</option>
+                            </select>
+                            <div class="select-arrow">&#9660</div>
+                        </div>
+                    </div>
+                <div id="fs2">
+                    <div>
+                        <label for="first-name">First Name*</label><br>
+                        <input type="text" name="First Name" id="first-name" placeholder="Thomas" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name*</label><br>
+                        <input type="text" name="Last Name" id="last-name" placeholder="Hickey" required>
+                    </div>
+                    <div>
+                        <label for="email-ad">Email Address*</label><br>
+                        <input type="email" name="Email Address" id="email-ad" placeholder="myemail@address.com" required>
+                    </div>
+                    <div>
+                        <label for="tel-number">Telephone Number</label><br>
+                        <input type="tel" name="Telephone Number" id="tel-number" placeholder="6471234567">
+                    </div>
+                </div>
+                <div id="fs3">
+                    <div class="upload-area">
+                        <label for="resume-upload">Upload Your Resume *</label>
+                        <input type="file" name="resume-upload" id="resume-upload" required="required" aria-label="Resume file upload button">
+                        <div class="file-upload">
+                            <div class="default">Please select your file</div>
+                            <div class="upload-success">File has uploaded</div>
+                        </div>
+                    </div>
+                    <div class="upload-area">
+                        <label for="cover-upload">Upload Your Cover Letter *</label>
+                        <input type="file" name="cover-upload" id="cover-upload" required="required" aria-label="Cover letter file upload button">
+                        <div class="file-upload">
+                            <div class="default">Please select your file</div>
+                            <div class="upload-success">File has uploaded</div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" value="submit">Submit</button>
+            </form>
         </div>
-        <form method="post" enctype="multipart/form-data">
-            <label for="position">Position Applied For*</label><br>
-            <select name="Position" id="position">
-                <option value="j1">Job one</option>
-                <option value="j2">Job two</option>
-                <option value="j3">Job three</option>
-                <option value="j4">Job four</option>
-                <option value="j5">Job five</option>
-                <option value="j6">Job six</option>
-            </select>
-
-            <label for="first-name">First Name*</label><br>
-            <input type="text" name="First Name" id="first-name">
-            
-            <label for="last-name">Last Name*</label><br>
-            <input type="text" name="Last Name" id="last-name">
-
-            <label for="email-ad">Email Address*</label><br>
-            <input type="email" name="Email Address" id="email-ad">
-
-            <label for="tel-number">Telephone Number</label><br>
-            <input type="tel" name="Telephone Number" id="tel-number">
-
-            <label for="resume">Resume*</label><br>
-            <input type="file" id="resume">
-
-            <label for="cover-letter">Cover Letter*</label><br>
-            <input type="file" id="cover-letter">
-
-
-            <button type="submit" value="submit">Submit</button>
-        </form>
     </main>
 </body>
 </html>

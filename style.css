@@ -108,7 +108,7 @@ a {
 
 .career-box:hover {
 	background-color: hsl(0, 14%, 89%);
-	color: black;
+	color: hsl(0, 14%, 28%);
 	cursor: pointer;
 }
 
@@ -164,7 +164,7 @@ a {
 	grid-row-start: 3;
 	border-radius: 32px;
 	background-color: white;
-	color: black;
+	color: hsl(0, 14%, 28%);
 	padding: 32px 32px;
 	display: flex;
 	flex-direction: column;
@@ -188,7 +188,7 @@ button {
 	font-size: 24px;
 	border-radius: 16px;
 	text-transform:uppercase;
-	background-color: black;
+	background-color: hsl(0, 14%, 8%);
 	color: white;
 	transition: 250ms;
 }
@@ -204,6 +204,7 @@ button:active {
 
 .career-info-right {
 	background-color: hsl(0, 14%, 95%);
+	color: hsl(0, 14%, 18%);
 	box-sizing: border-box;
 	height: 100vh;
 	width: 67%;
@@ -318,7 +319,7 @@ label {
 	width: 100%;
 	height: 100%;
 	background-color: hsl(0, 14%, 96%);
-	color: hsl(0, 14%, 30%);
+	color: hsl(0, 14%, 28%);
 	font-size: 18px;
 	font-weight: 600;
 	font-variant: small-caps;
@@ -357,7 +358,7 @@ label {
 	height: 32px;
 	padding: 0 0 0 16px;
 	background-color: hsl(0, 14%, 96%);
-	color: hsl(0, 14%, 30%);
+	color: hsl(0, 14%, 28%);
 	border-radius: 8px;
 	font-size: 16px;
 	font-weight: 600;
